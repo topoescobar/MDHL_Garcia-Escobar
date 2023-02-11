@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 10vh;
+    padding: 0.8rem 0.8rem;
+    position: absolute;
+    right: 10vw;
+    display: inline;
+}
+
+nav a{  
+    display: inline-block;
+    color: white;
+    background-color: rgb(18, 183, 128);
+    height: 6vh;
+    width: 8rem;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin: 0.3rem;
+}
+
+a[href="#"]{
+    background-color: green;
+    color: aliceblue;
+}
+
+a:hover{
+    color: black;
+    background-color: orange;
+}
+
+a {
+    transition: transform 1s;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
