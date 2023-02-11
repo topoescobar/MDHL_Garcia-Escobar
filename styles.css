@@ -56,9 +56,57 @@ a:hover {
     transform: scale(1.2);
 }
 
+section {
+    text-align: left;
+    padding-left: 220px;
+}
+h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.events-content {
+    text-align: left;
+    padding:2rem 8rem;
+    background: lightgrey;
+
+}
+
+.text-content {
+    margin: 1rem;
+    display: block;
+    max-width: 80vw;
+}
+
+
 .banner {
     position: relative;
     width: 100%;
     height: 100%;
     z-index: -1;
+    border-top: 0.2rem solid black;
+}
+
+.title-box {
+    padding: 1rem 0;
+    margin-top: -0.3rem; /*POR QUE TENGO QUE AGREGARLE ESTE MARGIN PARA QUE QUEDE SIN ESPACIO ARRIBA? */
+    border: 2px solid black;  
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(215deg, rgba(253,187,45,0.8) 0%, rgba(34,193,195,0.8) 100%);
+
+}
+
+
+#logo {
+    position: absolute;
+    padding-left: 1rem;
+}
+
+#player-img {
+    position: relative;
+    left: 50rem;
+    top: -10rem;
+    border-radius: 80%;
 }
