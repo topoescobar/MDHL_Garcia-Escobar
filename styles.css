@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *{
+    font-family: 'Comic Neue', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1{
+    padding: 1rem 2rem;
+    font-weight: bolder;
+    font-size: 3rem;
+    background: rgb(34,193,195);
+    background: linear-gradient(215deg, rgba(253,187,45,0.8) 0%, rgba(34,193,195,0.8) 100%);
 }
 
 nav{
@@ -9,26 +20,27 @@ nav{
     padding: 0.8rem 0.8rem;
     position: absolute;
     right: 10vw;
+    top: 8vh;
     display: inline;
 }
 
 nav a{  
     display: inline-block;
     color: white;
-    background-color: rgb(18, 183, 128);
+    background-color: royalblue;
     height: 6vh;
     width: 8rem;
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 1rem;
+    border: 2px solid black;
+    box-shadow: 3px 3px 1.5px 1.5px dimgrey;
     margin: 0.3rem;
 }
 
 a[href="#"]{
-    background-color: green;
-    color: aliceblue;
+    background-color: seagreen;
 }
 
 a:hover{
@@ -42,4 +54,11 @@ a {
 
 a:hover {
     transform: scale(1.2);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
