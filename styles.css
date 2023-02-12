@@ -66,19 +66,9 @@ h3 {
     text-align: left;
 }
 
-.events-content {
-    text-align: left;
-    padding:2rem 8rem;
-    background: lightgrey;
-
+article {
+    background-color: lightslategrey;
 }
-
-.text-content {
-    margin: 1rem;
-    display: block;
-    max-width: 50vw;
-}
-
 
 .banner {
     position: relative;
@@ -98,15 +88,24 @@ h3 {
 
 }
 
+.align {
+    display: inline-block;
+    margin: 2rem;
+    max-width: 30vw;
+}
+
 
 #logo {
-    position: absolute;
-    padding-left: 1rem;
+    margin-left: 10rem;
+}
+
+#text {
+/*    margin-top: -3rem;  XQ NO FUNCIONA? si aumenta el texto se mueve hacia arriba*/
+/*text-align: top; tampoco funciona*/
+    position: relative;
+    top: -3rem;
 }
 
 #player-img {
-    position: relative;
-    left: 50rem;
-    top: -12rem;
     border-radius: 80%;
 }
