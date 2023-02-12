@@ -58,8 +58,8 @@ a:hover {
 
 section {
     text-align: left;
-    padding-left: 220px;
 }
+
 h3 {
     font-size: 25px;
     font-weight: bolder;
@@ -90,20 +90,20 @@ article {
 
 .align {
     display: inline-block;
-    margin: 2rem;
-    max-width: 30vw;
+    margin: 1rem;
+    max-width: 35rem;
 }
 
 
 #logo {
-    margin-left: 10rem;
+    margin-left: 9rem;
 }
 
 #text {
 /*    margin-top: -3rem;  XQ NO FUNCIONA? si aumenta el texto se mueve hacia arriba*/
 /*text-align: top; tampoco funciona*/
     position: relative;
-    top: -3rem;
+    top: 0rem;
 }
 
 #player-img {
