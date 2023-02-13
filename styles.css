@@ -60,14 +60,31 @@ section {
     text-align: left;
 }
 
+h2 {
+    font-size: 2rem;
+    transition: transform 2s; 
+}
 h3 {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bolder;
     text-align: left;
+}
+p{
+    font-size: 1.2rem;
 }
 
 article {
     background-color: lightslategrey;
+}
+
+h2:hover {
+   transform: scale(1.5) rotate(25deg); 
+   filter: drop-shadow(2px 2px white);
+}
+
+article>img:hover{
+    transition: transform 2s; 
+    transform: scale(1.2);
 }
 
 .banner {
@@ -85,7 +102,6 @@ article {
     text-align: center;
     background: rgb(34,193,195);
     background: linear-gradient(215deg, rgba(253,187,45,0.8) 0%, rgba(34,193,195,0.8) 100%);
-
 }
 
 .align {
@@ -94,16 +110,14 @@ article {
     max-width: 35rem;
 }
 
-
 #logo {
     margin-left: 9rem;
 }
 
 #text {
-/*    margin-top: -3rem;  XQ NO FUNCIONA? si aumenta el texto se mueve hacia arriba*/
-/*text-align: top; tampoco funciona*/
     position: relative;
     top: 0rem;
+    vertical-align: top;
 }
 
 #player-img {
