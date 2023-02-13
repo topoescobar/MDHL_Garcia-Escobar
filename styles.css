@@ -80,14 +80,14 @@ article {
     background-color: lightslategrey;
 }
 
-h2:hover {
-   transform: scale(1.5) rotate(25deg); 
-   filter: drop-shadow(2px 2px white);
-}
-
 article>img:hover{
     transition: transform 2s; 
     transform: scale(1.2);
+}
+
+.h2animation:hover {
+   transform: scale(1.5) rotate(25deg); 
+   filter: drop-shadow(2px 2px white);
 }
 
 .banner {
@@ -113,6 +113,22 @@ article>img:hover{
     max-width: 35rem;
 }
 
+.list-none {
+    list-style: none;
+}
+
+.list-number {
+  list-style-type: decimal;
+}
+
+.list-lowlatin{
+    list-style: lower-latin;
+}
+
+.list-disc{
+    list-style: disc;
+}
+
 #logo {
     margin-left: 9rem;
 }
@@ -126,3 +142,4 @@ article>img:hover{
 #player-img {
     border-radius: 80%;
 }
+
