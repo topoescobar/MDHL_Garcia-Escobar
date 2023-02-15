@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap');*/
 
-/*@font-face{
+@font-face{
     font-family: 'Comic Neue';
     src: url(./assets/Fonts/ComicNeue-Regular.ttf);
-}*/
+}
 
-/**{
+*{
     font-family: 'Comic Neue';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}*/
+}*
 
 h1{
     padding: 1rem 3rem;
@@ -91,6 +91,24 @@ article>img:hover{
     transform: scale(1.2);
 }
 
+li {
+    margin-left: 1rem;
+}   
+
+table {
+    border: 1px solid black;
+    border-radius: 6px;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+th, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+
 .h2animation:hover {
    transform: scale(1.5) rotate(25deg); 
    filter: drop-shadow(2px 2px white);
@@ -119,6 +137,10 @@ article>img:hover{
     max-width: 35rem;
 }
 
+.list {
+    padding: 1rem;
+}
+
 .list-none {
     list-style: none;
 }
@@ -135,6 +157,15 @@ article>img:hover{
     list-style: disc;
 }
 
+.general-subtitle {
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
 #logo {
     margin-left: 9rem;
 }
@@ -148,4 +179,3 @@ article>img:hover{
 #player-img {
     border-radius: 80%;
 }
-
