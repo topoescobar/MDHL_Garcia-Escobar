@@ -12,37 +12,51 @@
     box-sizing: border-box;
 }*
 
-h1{
-    padding: 1rem 3rem;
-    font-weight: bolder;
-    font-size: 2.8rem;
+body {
     background: rgb(34,193,195);
     background: linear-gradient(215deg, rgba(253,187,45,0.8) 0%, rgba(34,193,195,0.8) 100%);
 }
+header {
+    display: flex;
+    flex-direction: column;
+}
 
+h1{
+    padding: 0.3rem 3rem;
+    font-weight: bolder;
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    transition: transform 2s; 
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: left;
+}
 nav{
     height: 10vh;
-    padding: 0.8rem 0.8rem;
-    position: absolute;
+    padding: 0.1rem 0.8rem;
+    /* position: absolute;
     right: 10vw;
-    top: 9vh;
+    top: 9vh; */
     display: flex;
     justify-content: center;
 }
 
 nav a{  
     display: flex;
-    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
     color: white;
     background-color: royalblue;
     height: 6vh;
     width: 8rem;
-    padding: 0.5rem;
-    justify-content: center;
-    text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.8rem ;
+    font-size: 0.9rem ;
     border: 2px solid black;
     box-shadow: 3px 3px 1.5px 1.5px dimgrey;
     margin: 0.3rem;
@@ -69,15 +83,7 @@ section {
     text-align: left;
 }
 
-h2 {
-    font-size: 2rem;
-    transition: transform 2s; 
-}
-h3 {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    text-align: left;
-}
+
 p{
     font-size: 1.2rem;
 }
@@ -115,16 +121,17 @@ th, td, tr{
 }
 
 .banner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    margin-top: -2.5rem;
+    min-width: 100rem;
+    height: 16rem;
+    z-index: -1 ;
     border-top: 0.2rem solid black;
+    background-image: url("./banner2.jpg");
+    background-repeat: repeat;
 }
 
 .title-box {
     padding: 1rem 0;
-    margin-top: -0.3rem; /*POR QUE TENGO QUE AGREGARLE ESTE MARGIN PARA QUE QUEDE SIN ESPACIO ARRIBA? */
     border: 2px solid black;  
     text-align: center;
     background: rgb(34,193,195);
