@@ -173,6 +173,11 @@ th, td, tr{
     justify-content: center;
 }
 
+.grade {
+    /* font-variant-position: super; */
+    vertical-align: super;
+}
+
 #logo {
     margin-left: 9rem;
 }
