@@ -134,7 +134,7 @@ fieldset {
 }
 
 .h2animation:hover {
-    transform: scaleY(0.2) skew(180deg,0deg); 
+    transform: skew(180deg,0deg); 
 }
 
 .banner {
