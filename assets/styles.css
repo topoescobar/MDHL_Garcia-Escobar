@@ -1,0 +1,181 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap');*/
+
+@font-face{
+    font-family: 'Comic Neue';
+    src: url(./assets/Fonts/ComicNeue-Regular.ttf);
+}
+
+*{
+    font-family: 'Comic Neue';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*
+
+h1{
+    padding: 1rem 3rem;
+    font-weight: bolder;
+    font-size: 2.8rem;
+    background: rgb(34,193,195);
+    background: linear-gradient(215deg, rgba(253,187,45,0.8) 0%, rgba(34,193,195,0.8) 100%);
+}
+
+nav{
+    height: 10vh;
+    padding: 0.8rem 0.8rem;
+    position: absolute;
+    right: 10vw;
+    top: 9vh;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{  
+    display: flex;
+    flex-grow: 1;
+    color: white;
+    background-color: royalblue;
+    height: 6vh;
+    width: 8rem;
+    padding: 0.5rem;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem ;
+    border: 2px solid black;
+    box-shadow: 3px 3px 1.5px 1.5px dimgrey;
+    margin: 0.3rem;
+}
+
+a[href="#"]{
+    background-color: seagreen;
+}
+
+a:hover{
+    color: black;
+    background-color: orange;
+}
+
+a {
+    transition: transform 1s;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+section {
+    text-align: left;
+}
+
+h2 {
+    font-size: 2rem;
+    transition: transform 2s; 
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: left;
+}
+p{
+    font-size: 1.2rem;
+}
+
+article {
+    background-color: lightslategrey;
+}
+
+article>img:hover{
+    transition: transform 2s; 
+    transform: scale(1.2);
+}
+
+li {
+    margin-left: 1rem;
+}   
+
+table {
+    border: 1px solid black;
+    border-radius: 6px;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+th, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+
+.h2animation:hover {
+   transform: scale(1.5) rotate(25deg); 
+   filter: drop-shadow(2px 2px white);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-top: 0.2rem solid black;
+}
+
+.title-box {
+    padding: 1rem 0;
+    margin-top: -0.3rem; /*POR QUE TENGO QUE AGREGARLE ESTE MARGIN PARA QUE QUEDE SIN ESPACIO ARRIBA? */
+    border: 2px solid black;  
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(215deg, rgba(253,187,45,0.8) 0%, rgba(34,193,195,0.8) 100%);
+}
+
+.align {
+    display: inline-block;
+    margin: 1rem;
+    max-width: 35rem;
+}
+
+.list {
+    padding: 1rem;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.list-number {
+  list-style-type: decimal;
+}
+
+.list-lowlatin{
+    list-style: lower-latin;
+}
+
+.list-disc{
+    list-style: disc;
+}
+
+.general-subtitle {
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    margin-left: 9rem;
+}
+
+#text {
+    position: relative;
+    top: 0rem;
+    vertical-align: top;
+}
+
+#player-img {
+    border-radius: 80%;
+}
