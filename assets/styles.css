@@ -2,7 +2,7 @@
 
 @font-face{
     font-family: 'Comic Neue';
-    src: url(./assets/Fonts/ComicNeue-Regular.ttf);
+    src: url(./fonts/ComicNeue-Regular.ttf);
 }
 
 *{
@@ -12,37 +12,58 @@
     box-sizing: border-box;
 }*
 
-h1{
-    padding: 1rem 3rem;
-    font-weight: bolder;
-    font-size: 2.8rem;
-    background: rgb(34,193,195);
-    background: linear-gradient(215deg, rgba(253,187,45,0.8) 0%, rgba(34,193,195,0.8) 100%);
+body {
+    background: linear-gradient(155deg, rgba(253,187,45,0.5) 0%, rgba(34,193,195,0.4) 100%);
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(226, 163, 28, 0.8) 0%, rgba(34,193,195,0.8) 120%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    padding: 0.3rem 3rem;
+    font-weight: bolder;
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    transition: transform 3s; 
+}
+h3 {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-align: center;
+}
 nav{
     height: 10vh;
-    padding: 0.8rem 0.8rem;
-    position: absolute;
+    padding: 0.1rem 0.8rem;
+    /* position: absolute;
     right: 10vw;
-    top: 9vh;
+    top: 9vh; */
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 nav a{  
     display: flex;
-    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
     color: white;
     background-color: royalblue;
     height: 6vh;
     width: 8rem;
-    padding: 0.5rem;
-    justify-content: center;
-    text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.8rem ;
+    font-size: 0.9rem ;
     border: 2px solid black;
     box-shadow: 3px 3px 1.5px 1.5px dimgrey;
     margin: 0.3rem;
@@ -62,28 +83,16 @@ a {
 }
 
 a:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 section {
     text-align: left;
 }
 
-h2 {
-    font-size: 2rem;
-    transition: transform 2s; 
-}
-h3 {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    text-align: left;
-}
+
 p{
     font-size: 1.2rem;
-}
-
-article {
-    background-color: lightslategrey;
 }
 
 article>img:hover{
@@ -96,7 +105,7 @@ li {
 }   
 
 table {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 6px;
     border-collapse: collapse;
     font-size: 1.5rem;
@@ -108,27 +117,42 @@ th, td, tr{
     padding: 0.5rem;
 }
 
+form {
+    margin: 1em 10em 3em 10em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    flex-wrap: wrap;
+}
+
+fieldset {
+    margin: 0.1em;
+    padding: 0.1em;
+    align-self: center;
+    border: 0px ;
+    font-size: 1.2em;
+}
 
 .h2animation:hover {
-   transform: scale(1.5) rotate(25deg); 
-   filter: drop-shadow(2px 2px white);
+    transform: skew(180deg,0deg); 
 }
 
 .banner {
-    position: relative;
+    margin-top: -2.5rem;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-top: 0.2rem solid black;
+    height: 18em;
+    z-index: 0;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background-image: url("./banner2.jpg");
+    background-size: cover;
+    opacity: 0.9;
 }
 
 .title-box {
     padding: 1rem 0;
-    margin-top: -0.3rem; /*POR QUE TENGO QUE AGREGARLE ESTE MARGIN PARA QUE QUEDE SIN ESPACIO ARRIBA? */
-    border: 2px solid black;  
     text-align: center;
-    background: rgb(34,193,195);
-    background: linear-gradient(215deg, rgba(253,187,45,0.8) 0%, rgba(34,193,195,0.8) 100%);
+    background: linear-gradient(180deg, rgba(34,193,195,0.5) 50%, rgba(65,105,225,0) 100%);
 }
 
 .align {
@@ -161,19 +185,67 @@ th, td, tr{
     text-align: center;
 }
 
-.flex-center {
+.flex-col-center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 0% 15%;
 }
 
-#logo {
-    margin-left: 9rem;
+.flex-row-cent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.self{
+    display: inline;
+}
+
+.grade {
+    /* font-variant-position: super; */
+    vertical-align: super;
+}
+
+.maps{
+    padding: 0.5em;
+    text-align: center;
+}
+
+.extra-info {
+    margin: 1em;
+    padding: 1em;
+}
+
+.form-box {
+    border: 1px solid black;
+}
+
+.button{
+    /* border: 1px solid black; */
+    border-radius: 0.2em ;
+    font-size: 1.5em;
+    font-weight: bolder;
+    align-self: center;
+    text-align: center;
+    margin: 1em;
+    padding: 0.3em 1em;
+}
+
+.left-title {
+    text-align: left;
+}
+
+.margin {
+    margin: 1rem;
 }
 
 #text {
     position: relative;
     top: 0rem;
     vertical-align: top;
+    
 }
 
 #player-img {
